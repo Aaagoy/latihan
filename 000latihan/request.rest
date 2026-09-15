@@ -1,0 +1,64 @@
+# GET http://localhost:5000/products
+
+# ###
+# GET http://localhost:5000/products/1
+
+# ###
+# POST http://localhost:5000/products
+# Content-Type: application/json
+
+# {
+#     "namaproduct": "sadsad",
+#     "kategori": "dsfdsf",
+#     "harga": 530004,
+#     "stok": 203
+# }
+
+# ###
+# PATCH  http://localhost:5000/products/1
+# Content-Type: application/json
+
+# {
+#     "namaproduct": "Drobbar",
+#     "kategori": "Bar",
+#     "harga": 65000,
+#     "stok": 20
+# }
+
+# ###
+# DELETE http://localhost:5000/products/3
+
+
+//khusus employees⬇️⬇️⬇️⬇️
+###
+GET http://localhost:5000/employees
+
+###
+GET http://localhost:5000/Employees/1
+
+###
+POST http://localhost:5000/Employees
+Content-Type: application/json
+
+{
+    "idkaryawan": 135485083,
+    "namekaryawan": "LORD AGOY",
+    "gender": "Laki-laki",
+    "position": "HEAD OFFICE",
+    "education": "Bachelor of Computer Science"
+}
+
+###
+PATCH  http://localhost:5000/Employees/1
+Content-Type: application/json
+
+{
+    "idkaryawan": 135485083,
+    "namekaryawan": "LORD AGOY",
+    "gender": "Laki-laki",
+    "position": "HEAD OFFICE",
+    "education": "Bachelor of Computer Science"    
+}
+
+###
+DELETE http://localhost:5000/Employees/3
