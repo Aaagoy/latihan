@@ -1,5 +1,4 @@
-import express from "express"; 
-// import cors from "cors";
+import express from "express";
 import cors from "cors";
 import ProductsRoute from "./routes/ProductsRoute.js";
 

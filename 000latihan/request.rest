@@ -1,64 +1,44 @@
-# GET http://localhost:5000/products
-
-# ###
-# GET http://localhost:5000/products/1
-
-# ###
-# POST http://localhost:5000/products
-# Content-Type: application/json
-
-# {
-#     "namaproduct": "sadsad",
-#     "kategori": "dsfdsf",
-#     "harga": 530004,
-#     "stok": 203
-# }
-
-# ###
-# PATCH  http://localhost:5000/products/1
-# Content-Type: application/json
-
-# {
-#     "namaproduct": "Drobbar",
-#     "kategori": "Bar",
-#     "harga": 65000,
-#     "stok": 20
-# }
-
-# ###
-# DELETE http://localhost:5000/products/3
-
-
-//khusus employees⬇️⬇️⬇️⬇️
-###
-GET http://localhost:5000/employees
+GET http://localhost:5000/cakes
 
 ###
-GET http://localhost:5000/Employees/1
+GET http://localhost:5000/cakes/1
 
 ###
-POST http://localhost:5000/Employees
+POST http://localhost:5000/cakes
 Content-Type: application/json
 
 {
-    "idkaryawan": 135485083,
-    "namekaryawan": "LORD AGOY",
-    "gender": "Laki-laki",
-    "position": "HEAD OFFICE",
-    "education": "Bachelor of Computer Science"
+    "namaproduct": "Mini Brownies",
+    "kategori": "Sweet Snacks",
+    "harga": 5000,
+    "stok": 20
 }
 
 ###
-PATCH  http://localhost:5000/Employees/1
+PATCH  http://localhost:5000/cakes/1
 Content-Type: application/json
 
 {
-    "idkaryawan": 135485083,
-    "namekaryawan": "LORD AGOY",
-    "gender": "Laki-laki",
-    "position": "HEAD OFFICE",
-    "education": "Bachelor of Computer Science"    
+    "namaproduct": "Mini Cakes",
+    "kategori": "Cakes & Pastry",
+    "harga": 17000,
+    "stok": 20
 }
 
 ###
-DELETE http://localhost:5000/Employees/3
+DELETE http://localhost:5000/cakes/3
+
+
+// soal 2
+###
+GET http://localhost:5000/cakes/search?kategori=Cakes%20%26%20Pastry&maxharga=25000
+
+
+// soal 3
+###
+PATCH http://localhost:5000/cakes/1/stok
+Content-Type: application/json
+
+{
+    "stok": 5
+}
